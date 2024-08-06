@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <content>
+            <br />
+            <h1>My Portfolio.</h>
+            <br />
+            <h3>Hey, I'm Noppon Sripetchpool</h3>
+            <h4>Mobile Developer (Flutter)</h4>
+            <div id="tab_filters" class="tab_filters">
+                <a href="#" data-filter="All" class="active">All</a>
+                <a href="#" data-filter="iOS">iOS</a>
+                <a href="#" data-filter="Android">Android</a>
+            </div>
+            <div class="image-list-box">
+                <img src="images/image1.jpg" alt="Image 1" data-category="iOS Android"
+                    data-text="GRoof Smart Living<br><br>Begin your clean energy journey with an easy-to-use solar rooftop application that allows you to learn more about how the system is performing, how much your savings are, and how you can help the environment. Application also provides you with an in-depth analysis of the power production/consumption over a chosen period and keep track of all your documents for maintenance purposes.">
+                <img src="images/image2.jpg" alt="Image 2" data-category="iOS Android"
+                    data-text="GRoof Internal<br><br>Introducing GRoof’s work-smart application designed to optimize solar rooftop projects and internal team's workflow from start to finish. Enhance team collaboration, boost efficiency, and ensure better customers’ experiences by seamlessly simplifying on-site data collection and uploading while staying focused on task completion. Elevate your workflow with our secure and task-oriented solution.">
+                <img src="images/image3.jpg" alt="Image 3" data-category="Android" data-text="Where Are You<br><br>แอปพลิเคชันที่ช่วยให้บุคคลทั่วไปได้ทราบถึงสถานที่ต่าง ๆ บริเวณรอบมหาวิทยาลัย มีสถานที่ยอดนิยมแนะนำให้ผู้ใช้งานได้ทราบ และผู้ใช้งานสามารถใช้ map เพื่อนำทางไปสถานที่ที่สนใจได้">
+                <img src="images/image4.jpg" alt="Image 4" data-category="All" class="no-modal">
+                <img src="images/image5.jpg" alt="Image 5" data-category="All" class="no-modal">
+                <img src="images/image6.jpg" alt="Image 6" data-category="All" class="no-modal">
+            </div>
+            <br>
+            
+            <script src="js/scripts.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const currentYear = new Date().getFullYear();
+                    document.getElementById('currentYear').textContent = currentYear;
+                });
+            </script>
+            <div class="u-container-layout u-container-layout-1">
+                <h3 class="u-text u-text-3">About me</h3>
+                <p class="u-text u-text-default u-text-4">I'm a mobile developer (flutter) with good knowledge of front-end techniques. I can upload it to the store, can work well with the ux/ui team. Able to perform assigned work according to desired requirements.&nbsp;</p>
+            <a href="mailto:noppon0031@gmail.com.com, noppon0031@gmail.com">
+                Email : noppon0031@gmail.com
+            </a>
+            </div>
+        </content>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <div id="modalText"></div>
+                <div class="slider">
+                    <span class="prev">&lt;</span>
+                    <img id="modalImg" class="slider-img">
+                    <span class="next">&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="footer">
+    <p>© <span id="currentYear"></span> Noppon Sripetchpool. All Rights Reserved.</p>
+</footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
